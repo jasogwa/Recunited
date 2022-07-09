@@ -1,0 +1,23 @@
+{
+  "name": "Recunited",
+  "version": "1.0.0",
+  "description": "This repository implements the BigClam alorithm on Apache Spark used for detecting overlapping communities in ISEBEL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasogwa/Recunited.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasogwa/Recunited/issues"
+  },
+  "homepage": "https://github.com/jasogwa/Recunited#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
