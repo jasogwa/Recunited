@@ -1,5 +1,13 @@
 /* eslint-disable prettier/prettier */
-import { IsString, IsEmail, IsNotEmpty } from 'class-validator';
+import { IsString, IsEmail, IsNotEmpty, IsEnum } from 'class-validator';
+
+enum AreaOfExpertise {
+  Allergy = 'Allergy and Immunology', 
+  Anesthesiology = 'Anesthesiology', 
+  Colon  = 'Colon and Rectal Surgery', 
+  Dermatology = 'Dermatology',
+  Emergency = 'Emergency Medicine',
+}
 
 export class DoctorDto {
 
@@ -18,9 +26,10 @@ export class DoctorDto {
   @IsString()
   city: string;
 
-  @IsString()
-  areaOfExpertise: string;
+  @IsEnum(AreaOfExpertise)
+  areaOfExpertise: AreaOfExpertise;
 
   @IsString()
   facility: string;
 }
+
